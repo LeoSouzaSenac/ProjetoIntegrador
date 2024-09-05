@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Completo do Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Guia Completo do Flexbox</h1>
+    <p>Aprenda como funciona o Flexbox com exemplos práticos.</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2 class="section-title">O que é Flexbox?</h2>
+        <p>O Flexbox é um modelo de layout unidimensional que oferece uma maneira de distribuir o espaço entre os itens de um contêiner e alinhar esses itens de maneira flexível e previsível.</p>
+    </section>
+
+    <section>
+        <h2 class="section-title">Propriedades do Contêiner Flex</h2>
+        <p>As principais propriedades que você pode aplicar a um contêiner flex são:</p>
+        <ul>
+            <li><strong>display: flex;</strong> - Define um contêiner como flexível.</li>
+            <li><strong>flex-direction:</strong> - Define a direção dos itens (row, row-reverse, column, column-reverse).</li>
+            <li><strong>justify-content:</strong> - Alinha os itens ao longo do eixo principal (flex-start, flex-end, center, space-between, space-around).</li>
+            <li><strong>align-items:</strong> - Alinha os itens ao longo do eixo transversal (flex-start, flex-end, center, stretch, baseline).</li>
+            <li><strong>flex-wrap:</strong> - Define se os itens devem quebrar ou não em várias linhas (nowrap, wrap, wrap-reverse).</li>
+        </ul>
+    </section>
+
+<div class="container">
+
+    <!-- Flex Direction -->
+    <div class="section">
+        <h2>flex-direction</h2>
+        <p>A propriedade <strong>flex-direction</strong> define a direção dos itens dentro do contêiner flexível. As opções são:</p>
+        <ul>
+            <li><code>row</code> (padrão)</li>
+            <li><code>row-reverse</code></li>
+            <li><code>column</code></li>
+            <li><code>column-reverse</code></li>
+        </ul>
+        <div class="example">
+
+
+
+
+
+
+            <div class="flex-container">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+
+
+
+
+
+
+
+
+            <pre><code>.flex-container {
+    display: flex;
+    flex-direction: row;
+}</code></pre>
+        </div>
+    </div>
+
+    <!-- Justify Content -->
+    <div class="section">
+        <h2>justify-content</h2>
+        <p>A propriedade <strong>justify-content</strong> alinha os itens ao longo do eixo principal do contêiner. As opções são:</p>
+        <ul>
+            <li><code>flex-start</code> (padrão)</li>
+            <li><code>flex-end</code></li>
+            <li><code>center</code></li>
+            <li><code>space-between</code></li>
+            <li><code>space-around</code></li>
+            <li><code>space-evenly</code></li>
+        </ul>
+        <div class="example">
+            <div class="flex-container-justify-content">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+            <pre><code>.flex-container {
+    display: flex;
+    justify-content: space-between;
+}</code></pre>
+        </div>
+    </div>
+
+    <!-- Align Items -->
+    <div class="section">
+        <h2>align-items</h2>
+        <p>A propriedade <strong>align-items</strong> alinha os itens ao longo do eixo transversal do contêiner. As opções são:</p>
+        <ul>
+            <li><code>stretch</code> (padrão)</li>
+            <li><code>flex-start</code></li>
+            <li><code>flex-end</code></li>
+            <li><code>center</code></li>
+            <li><code>baseline</code></li>
+        </ul>
+        <div class="example">
+            <div class="flex-container-align-itens">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+            <pre><code>.flex-container {
+    display: flex;
+    align-items: center;
+    height: 150px;
+}</code></pre>
+        </div>
+    </div>
+
+    <!-- Flex Wrap -->
+    <div class="section">
+        <h2>flex-wrap</h2>
+        <p>A propriedade <strong>flex-wrap</strong> define se os itens devem quebrar em várias linhas, se necessário. As opções são:</p>
+        <ul>
+            <li><code>nowrap</code> (padrão)</li>
+            <li><code>wrap</code></li>
+            <li><code>wrap-reverse</code></li>
+        </ul>
+        <div class="example">
+            <div class="flex-container-flex-wrap">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+                <div class="flex-item">Item 4</div>
+                <div class="flex-item">Item 5</div>
+                <div class="flex-item">Item 6</div>
+            </div>
+            <pre><code>.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}</code></pre>
+        </div>
+    </div>
+
+    <!-- Align Content -->
+    <div class="section">
+        <h2>align-content</h2>
+        <p>A propriedade <strong>align-content</strong> alinha as linhas do contêiner quando há espaço extra no eixo transversal. As opções são:</p>
+        <ul>
+            <li><code>stretch</code> (padrão)</li>
+            <li><code>flex-start</code></li>
+            <li><code>flex-end</code></li>
+            <li><code>center</code></li>
+            <li><code>space-between</code></li>
+            <li><code>space-around</code></li>
+        </ul>
+        <div class="example">
+            <div class="flex-container-align-content">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+                <div class="flex-item">Item 4</div>
+                <div class="flex-item">Item 5</div>
+                <div class="flex-item">Item 6</div>
+                <div class="flex-item">Item 7</div>
+                <div class="flex-item">Item 8</div>
+                <div class="flex-item">Item 9</div>
+                <div class="flex-item">Item 10</div>
+                <div class="flex-item">Item 11</div>
+                <div class="flex-item">Item 12</div>
+            </div>
+            <pre><code>.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 300px;
+}</code></pre>
+        </div>
+    </div>
+
+    
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.section-title {
+   margin-top: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    margin: 0 -20px 20px -20px;
+}
+
+.section p {
+    margin-bottom: 10px;
+}
+
+.example {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #333;
+    background-color: #eaeaea;
+}
+
+.flex-container-justify-content{
+    display: flex;
+    justify-content: flex-start;
+    
+    border: 1px solid #333;
+    background-color: #eaeaea;
+}
+
+.flex-container-align-itens{
+    display: flex;
+    align-items: stretch;
+    height: 150px;
+    
+    border: 1px solid #333;
+    background-color: #eaeaea;
+}
+
+.flex-container-flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+     
+    border: 1px solid #333;
+    background-color: #eaeaea;
+}
+
+.flex-container-align-content{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    height: 150px;
+    
+    border: 1px solid #333;
+    background-color: #eaeaea;
+}
+
+.example .flex-item {
+    background-color: #ccc;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    
+}
+
+pre {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+
+/*align-items controla o alinhamento dos itens individuais em uma linha.
+
+align-content controla o alinhamento das linhas inteiras (se houver múltiplas linhas) no eixo transversal. Só faz diferença quando há mais de uma linha de itens no contêiner*/
